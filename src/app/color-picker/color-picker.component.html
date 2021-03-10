@@ -1,0 +1,15 @@
+<p>color-picker works!</p>
+<p>
+    Value: {{ name.value }}
+</p>
+<label>
+    Name:
+    <input type="text" [formControl]="name">
+</label>
+<p>
+    <button (click)="pickRed()">Pick Red</button>
+    <button (click)="pickBlue()">Pick Blue</button>
+    <button (click)="pickGreen()">Pick Green</button>
+</p>
+
+<app-color-detail [item]="currentItem"></app-color-detail>
